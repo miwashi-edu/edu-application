@@ -1,11 +1,13 @@
 import './App.css'
+import {ConfigProvider} from '@/providers'
+import ConfigConsumer from '@/components/ConfigConsumer/ConfigConsumer.jsx'
 
 function App() {
 
   return (
-    <>
-	adu-application
-    </>
+    <ConfigProvider>
+        <ConfigConsumer />
+    </ConfigProvider>
   )
 }
 
